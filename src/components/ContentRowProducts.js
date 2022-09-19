@@ -1,31 +1,33 @@
 import React from 'react';
 import SmallCard from './SmallCard';
+import TotalProducts from './TotalProducts';
+import TotalCategories from './TotalCategories';
 
 let productInDataBase = {
     color:   "primary",
-    titulo: "Movies in Data Base",
-    valor: 21,
-    icono: "fas fa-film",
+    titulo: "Total Products",
+    valor: <TotalProducts />,
+    icono: "fas fa-guitar",
 }
 
 let amount ={
     color:   "success",
-    titulo: "Total awards",
-    valor: 79,
-    icono: "fas fa-award",
+    titulo: "Total Categories",
+    valor: <TotalCategories />,
+    icono: "fas fa-folder",
 }
 
 let user = {
     color:   "warning",
-    titulo: "Actors quantity",
-    valor: 49,
+    titulo: "Total Users",
+    valor: "xxxxxxxxxxx",
     icono: "fas fa-user",
 }
 
 let cardProps = [productInDataBase,amount,user];
 
 
-function ContentRowTop(){
+function ContentRowProducts(){
     return (
         <React.Fragment>
         {/*<!-- Content Row -->*/}
@@ -39,4 +41,4 @@ function ContentRowTop(){
         </React.Fragment>
     )
 }
-export default ContentRowTop;
+export default ContentRowProducts;

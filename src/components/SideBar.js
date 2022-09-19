@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/logo-musicalidades-header.png';
 
 function SideBar(){
     return(
@@ -10,7 +10,7 @@ function SideBar(){
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                        <img className="w-100" src={image} alt="Musicalidades"/>
                     </div>
                 </a>
 
@@ -21,7 +21,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></a>
+                        <span>Tienda Musicalidades</span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -33,8 +33,8 @@ function SideBar(){
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="/">
-                        <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <i className="fas fa-fw fa-guitar"></i>
+                        <span>Products</span>
                     </a>
                 </li>
 
