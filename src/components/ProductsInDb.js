@@ -8,10 +8,12 @@ class ProductsInDb extends Component {
         super()
         this.state = {
             totalProductos: [],
+            precioFinal: {}
         }
     }
 
     componentDidMount() {
+        console.log("Products montados")
         fetch('http://localhost:3001/api/products')
         .then(respuesta => {
             return respuesta.json()
@@ -26,6 +28,7 @@ class ProductsInDb extends Component {
         return (
             <React.Fragment>
                 {/*<!-- Products in DB -->*/}
+
                 {   
                     this.state.totalProductos.map((product,index)=>{
                         return  <Product  {...product}  key={index} />

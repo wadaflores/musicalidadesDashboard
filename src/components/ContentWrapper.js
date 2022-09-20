@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from './TopBar';
 import ContentRowTop from './ContentRowTop';
 import ProductList from './ProductList';
+import UsersList from './UsersList';
 import Footer from './Footer';
 function ContentWrapper(){
     return (
@@ -13,6 +14,7 @@ function ContentWrapper(){
                     <TopBar />
                     <ContentRowTop />
                     <ProductList />
+                    <UsersList />
                     <Footer />
                 </div>
             </div>    

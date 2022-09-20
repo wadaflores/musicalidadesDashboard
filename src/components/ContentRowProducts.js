@@ -2,6 +2,7 @@ import React from 'react';
 import SmallCard from './SmallCard';
 import TotalProducts from './TotalProducts';
 import TotalCategories from './TotalCategories';
+import TotalUsers from './TotalUsers';
 
 let productInDataBase = {
     color:   "primary",
@@ -20,7 +21,7 @@ let amount ={
 let user = {
     color:   "warning",
     titulo: "Total Users",
-    valor: "xxxxxxxxxxx",
+    valor: <TotalUsers />,
     icono: "fas fa-user",
 }
 

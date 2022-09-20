@@ -12,12 +12,12 @@ class CategoriesInDb extends Component {
     }
 
     componentDidMount() {
+        console.log("Categories montadas")
         fetch('http://localhost:3001/api/products')
         .then(respuesta => {
             return respuesta.json()
         })
         .then(categories => {
-            console.log(categories.categorias)
             this.setState({categoriesList: categories.categorias})
             
         })
@@ -37,7 +37,6 @@ class CategoriesInDb extends Component {
                             <div className="row">
                                 {   
                                     this.state.categoriesList.map((category,index)=>{
-
                                         return  <Category  {...category}  key={index} />
                                     })
                                 }
