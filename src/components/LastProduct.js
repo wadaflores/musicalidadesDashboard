@@ -10,7 +10,7 @@ function Category(props){
                             </div>
                             <div className="card-body">
                                 <div className="text-center">
-                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{height: 10 +'rem'}} src="http://localhost:3001/img/products/producto-1657641871006.jpg" alt=" Musicalidades - Último Producto"/>
+                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{height: 10 +'rem'}} src={props.imagenes} alt=" Musicalidades - Último Producto"/>
                                 </div>
                                 <h3>{props.nombre}</h3>
                                 <p>{props.descripcion}</p>
