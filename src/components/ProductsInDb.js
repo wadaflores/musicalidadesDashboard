@@ -19,12 +19,13 @@ class ProductsInDb extends Component {
             return respuesta.json()
         })
         .then(total => {
-            this.setState({totalProductos: total.productos})
+            this.setState({totalProductos: total.data.productos})
         })
         .catch(error => console.log(error))
     }
 
     render() {
+        console.log(this.state.totalProductos)
         return (
             <React.Fragment>
                 {/*<!-- Products in DB -->*/}

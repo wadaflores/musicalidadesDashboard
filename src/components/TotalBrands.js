@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
-class TotalUsers extends Component {
+class TotalBrands extends Component {
 
     constructor(){
         super()
         this.state = {
-            totalUsers: [],
+            totalBrands: [],
         }
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/api/users')
+        fetch('http://localhost:3001/api/products')
         .then(respuesta => {
             return respuesta.json()
         })
-        .then(users => {
-            this.setState({totalUsers: users.count})
+        .then(brands => {
+            this.setState({totalBrands: brands.data.countMarcas})
             
         })
         .catch(error => console.log(error))
@@ -24,9 +24,9 @@ class TotalUsers extends Component {
     render() {
         return (
             <React.Fragment>
-                {/*<!-- Users Total in DB -->*/}
+                {/*<!-- Brands Total in DB -->*/}
                 {   
-                    this.state.totalUsers
+                    this.state.totalBrands
                 }
             </React.Fragment>
         )
@@ -34,4 +34,4 @@ class TotalUsers extends Component {
 
 }
 
-export default TotalUsers;
+export default TotalBrands;

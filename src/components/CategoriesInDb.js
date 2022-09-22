@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Category from './Category';
+import CatCount from './CatCount';
 
 
 class CategoriesInDb extends Component {
@@ -8,6 +8,8 @@ class CategoriesInDb extends Component {
         super()
         this.state = {
             categoriesList: [],
+            countCategories: "",
+            countProductsByCategorie: []
         }
     }
 
@@ -18,7 +20,7 @@ class CategoriesInDb extends Component {
             return respuesta.json()
         })
         .then(categories => {
-            this.setState({categoriesList: categories.categorias})
+            this.setState({categoriesList: categories.data.categorias, countCategories: categories.data.countCategorias, countProductsByCategorie: categories.data.countProductosPorCategoria})
             
         })
         .catch(error => console.log(error))
@@ -31,15 +33,26 @@ class CategoriesInDb extends Component {
                 <div className="col-lg-6 mb-4">						
                     <div className="card shadow mb-4">
                         <div className="card-header py-3">
-                            <h6 className="m-0 font-weight-bold text-gray-800">Categories in Database</h6>
+                            <h6 className="m-0 font-weight-bold text-gray-800">Categories in Database: <span> </span>
+                                {   
+                                    this.state.countCategories
+                                }
+                            </h6>
                         </div>
                         <div className="card-body">
                             <div className="row">
-                                {   
+                                {/* {   
                                     this.state.categoriesList.map((category,index)=>{
                                         return  <Category  {...category}  key={index} />
                                     })
+                                } */}
+                                {   
+                                    this.state.countProductsByCategorie.map((countCategory,index)=>{
+                                        return  <CatCount  {...countCategory}  key={index} />
+                                    })
                                 }
+                                
+                                
                             </div>
                         </div>
                     </div>

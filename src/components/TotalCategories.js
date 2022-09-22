@@ -16,7 +16,7 @@ class TotalCategories extends Component {
             return respuesta.json()
         })
         .then(total => {
-            this.setState({totalCategorias: total.categorias.length})
+            this.setState({totalCategorias: total.data.countCategorias})
         })
         .catch(error => console.log(error))
     }

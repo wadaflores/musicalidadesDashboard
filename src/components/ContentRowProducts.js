@@ -1,7 +1,7 @@
 import React from 'react';
 import SmallCard from './SmallCard';
 import TotalProducts from './TotalProducts';
-import TotalCategories from './TotalCategories';
+import TotalBrands from './TotalBrands';
 import TotalUsers from './TotalUsers';
 
 let productInDataBase = {
@@ -13,9 +13,9 @@ let productInDataBase = {
 
 let amount ={
     color:   "success",
-    titulo: "Total Categories",
-    valor: <TotalCategories />,
-    icono: "fas fa-folder",
+    titulo: "Total Brands",
+    valor: <TotalBrands />,
+    icono: "fas fa-tags",
 }
 
 let user = {
