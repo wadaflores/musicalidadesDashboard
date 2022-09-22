@@ -6,7 +6,7 @@ function Category(props){
 <div className="col-lg-6 mb-4">
                         <div className="card shadow mb-4">
                             <div className="card-header py-3">
-                                <h5 className="m-0 font-weight-bold text-gray-800">Last product in Database</h5>
+                                <h5 className="m-0 font-weight-bold text-gray-800">Último Producto en la Base de Datos</h5>
                             </div>
                             <div className="card-body">
                                 <div className="text-center">
@@ -28,8 +28,9 @@ function Category(props){
                                 <div className="card-body red">
                                     <strong>Precio Final: ${props.precio * (100-props.descuento)/100}</strong>
                                 </div>
-{/*                                 <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View product detail</a>
- */}                            </div>
+                                <br></br>                                 
+                                <a className="btn grey" target="_blank" rel="noreferrer" href={props.url}>Ver Detalles del Producto</a>
+                            </div>
                         </div>
                     </div>
         </React.Fragment>

@@ -7,7 +7,7 @@ function CatCount(props){
                 <div className="card text-white bg-dark  shadow">
                     <div className="card-body">
                         <u>{props.tipo}</u><span>: </span>
-                        {props.cantidad}<span> products</span>
+                        {props.cantidad}<span> Productos</span>
                     </div>
                 </div>
             </div>

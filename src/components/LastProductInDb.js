@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import imagenFondo from '../assets/images/instruments.png';
 import LastProduct from './LastProduct';
 
 

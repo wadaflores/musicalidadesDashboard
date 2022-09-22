@@ -6,21 +6,21 @@ import TotalUsers from './TotalUsers';
 
 let productInDataBase = {
     color:   "primary",
-    titulo: "Total Products",
+    titulo: "Total Productos",
     valor: <TotalProducts />,
     icono: "fas fa-guitar",
 }
 
 let amount ={
     color:   "success",
-    titulo: "Total Brands",
+    titulo: "Total Marcas",
     valor: <TotalBrands />,
     icono: "fas fa-tags",
 }
 
 let user = {
     color:   "warning",
-    titulo: "Total Users",
+    titulo: "Total Usuarios",
     valor: <TotalUsers />,
     icono: "fas fa-user",
 }
