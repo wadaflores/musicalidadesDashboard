@@ -13,7 +13,7 @@ function ProductList(){
 							<div className="table-responsive">
 								<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 									<thead>
-										<tr>
+										<tr className="grey">
                                             <th>Id</th>
                                             <th>Producto</th>
                                             <th>Precio</th>
@@ -23,7 +23,7 @@ function ProductList(){
 										</tr>
 									</thead>
 									<tfoot>
-										<tr>
+										<tr className="grey">
 											<th>Id</th>
                                             <th>Producto</th>
                                             <th>Precio</th>

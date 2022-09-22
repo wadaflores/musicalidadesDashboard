@@ -13,14 +13,14 @@ function UsersList(){
 							<div className="table-responsive">
 								<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 									<thead>
-										<tr>
+										<tr className="colorcito">
                                             <th>Id</th>
                                             <th>Nombre</th>
                                             <th>Email</th>
 										</tr>
 									</thead>
 									<tfoot>
-										<tr>
+										<tr className="colorcito">
 											<th>Id</th>
                                             <th>Nombre</th>
                                             <th>Email</th>
