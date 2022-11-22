@@ -1,3 +1,18 @@
+# grupo_6_musicalidades --> React Dashboard. Curso FullStack Digital House
+
+Dashboard del proyecto Musicalidades. PROYECTO EN: https://github.com/wadaflores/musicalidadesProject
+
+___________________
+
+EL EQUIPO DE DESARROLLO: 
+
+Juan Agustín Vázquez: Tiene 26 años años y vive en Ciudad de Buenos Aires. Completó 2 años de ingenieria aeroespacial. Trabajó independientemente diagnosticando y reparando computadoras. Es estudiante de programador full stack. En su tiempo libre le gusta tocar el piano y jugar al tenis.
+
+Guadalupe Flores Cottet: Tiene 39 años años y vive en Ciudad de Buenos Aires. Es Diseñadora Gráfica y Licenciada en Tecnologías Educativas. Actualmente trabaja en análisis de información. Se desempeñó en diseño web durante varios años (front end) y recientemente realizó cursos de Diseño UX/UI y de QA Tesing. Busca volcarse 100% al mundo IT.
+
+___________________
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
