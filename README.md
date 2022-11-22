@@ -1,4 +1,4 @@
-# grupo_6_musicalidades --> React Dashboard. Curso FullStack Digital House
+# Musicalidades --> React Dashboard. Curso FullStack Digital House
 
 Dashboard del proyecto Musicalidades. PROYECTO EN: https://github.com/wadaflores/musicalidadesProject
 
